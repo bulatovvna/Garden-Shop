@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Garden_Shop/static/css/main.073c9b0a.css",
-    "main.js": "/Garden_Shop/static/js/main.9a463138.js",
-    "static/js/787.d3befce1.chunk.js": "/Garden_Shop/static/js/787.d3befce1.chunk.js",
-    "static/media/logo.svg": "/Garden_Shop/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/Garden_Shop/index.html",
-    "main.073c9b0a.css.map": "/Garden_Shop/static/css/main.073c9b0a.css.map",
-    "main.9a463138.js.map": "/Garden_Shop/static/js/main.9a463138.js.map",
-    "787.d3befce1.chunk.js.map": "/Garden_Shop/static/js/787.d3befce1.chunk.js.map"
+    "main.css": "/Garden-Shop/static/css/main.073c9b0a.css",
+    "main.js": "/Garden-Shop/static/js/main.f835a3c9.js",
+    "static/js/787.d3befce1.chunk.js": "/Garden-Shop/static/js/787.d3befce1.chunk.js",
+    "static/media/logo.svg": "/Garden-Shop/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Garden-Shop/index.html",
+    "main.073c9b0a.css.map": "/Garden-Shop/static/css/main.073c9b0a.css.map",
+    "main.f835a3c9.js.map": "/Garden-Shop/static/js/main.f835a3c9.js.map",
+    "787.d3befce1.chunk.js.map": "/Garden-Shop/static/js/787.d3befce1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.9a463138.js"
+    "static/js/main.f835a3c9.js"
   ]
 }
