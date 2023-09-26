@@ -1,0 +1,15 @@
+                    App:
+header
+
+HomePage - div>div*4
+    first div - newSeasonSale
+    second div - catalog
+    third div - offForFirstOrder
+    fourth div - saleProductsList
+CategoriesPage - div categoriesList
+ProductsPage - div>div sorting | div ProductsList
+ProductItemPage - div productItem
+CartPage - div> div productItemCart | div orderDetails
+NotFoundPage - div img
+
+footer
