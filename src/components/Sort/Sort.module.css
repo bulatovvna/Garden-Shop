@@ -1,0 +1,59 @@
+.sort_wrapper {
+    display: flex;
+    padding: 0 20px 46px 20px;
+}
+
+fieldset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    gap: 10px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.sort_price {
+    gap: 15px;
+    padding-right: 40px;
+}
+
+.sort_price > input {
+    max-width: 103px;
+    padding: 10px;
+    border: 0.5px solid rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+}
+
+.sort_price > input:focus {
+    outline: none;
+}
+
+.sort_discPrice {
+    display: flex;
+    gap: 40px;
+    padding-right: 91px;
+}
+
+.sort_discPrice > input {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.sort_options > select {
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.sort_options > select:focus {
+    outline: none;
+}
+
+option {
+    font-size: 20px;
+}

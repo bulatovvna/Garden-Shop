@@ -1,0 +1,37 @@
+h2 {
+    font-weight: 700;
+    font-size: 40px;
+    padding: 80px 20px;
+}
+
+.categoryList {
+    display: grid;
+    grid-template-columns: repeat(4, 318px);
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 0 20px 50px 20px;
+}
+
+.categoryItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    text-decoration: none;
+}
+
+.categoryItem img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.categoryItem p {
+    display: flex;
+    justify-content: center;
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+}

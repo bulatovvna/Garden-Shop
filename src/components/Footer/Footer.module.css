@@ -1,0 +1,57 @@
+.contactUs {
+    padding: 48px 32px;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 160px;
+}
+
+.contactInfo, .adressInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contactInfo>p, .adressInfo>p {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.contactInfo >.number {
+    font-weight: 600;
+    font-size: 70px;
+}
+
+.social_media {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.social_media a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social_media a>img {
+    width: 50px;
+    height: 50px;
+}
+
+.adressInfo a {
+    font-weight: 600px;
+    font-size: 40px;
+    color: #000;
+}
+
+.adressInfo > .working_hours {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.working_hours span {
+    font-weight: 600;
+    font-size: 24px;
+}

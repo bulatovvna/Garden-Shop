@@ -1,0 +1,55 @@
+.firstSaleOff {
+    background: linear-gradient(262.69deg, #339933 -0.43%, #006300 104.36%);
+    color: #fff;
+    height: 476px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 89px;
+}
+
+.firstSaleOff p {
+    font-weight: 700;
+    font-size: 90px;
+}
+
+.firstSaleOff .secondP {
+    font-size: 50px;
+    padding-bottom: 46px;
+}
+
+.inputInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.firstSaleOff input {
+    background: #fff;
+    border-radius: 25px;
+    border: none;
+    padding: 25px 50px;
+    font-size: 20px;
+}
+
+.firstSaleOff input:focus {
+    outline: none;
+    box-shadow: 0 2px 4px gray;
+}
+
+.firstSaleOff button {
+    border: 2px solid #fff;
+    border-radius: 25px;
+    background: none;
+    color: #fff;
+    padding: 15px 50px;
+
+    font-weight: 700;   
+    font-size: 28px;
+
+    cursor: pointer;
+}
+
+.firstSaleOff button:hover {
+    box-shadow: 0 3px 5px #006300;
+}

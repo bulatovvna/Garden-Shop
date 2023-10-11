@@ -1,0 +1,51 @@
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 100%;
+    margin-top: 76px;
+
+    background-color: #A1E2EB;
+
+    height: 600px;
+}
+
+.saleBanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    margin-left: 50px;
+}
+
+.saleBanner p {
+    color: #fff;
+    font-weight: 700;
+    font-size: 80px;
+}
+
+.saleBanner span {
+    font-size: 63px;
+}
+
+.saleBtn {
+    font-size: 25px;
+    padding: 25px 50px;
+    background: #fff;
+    color: #000;
+
+    border-radius: 13px;
+    border: none;
+
+    cursor: pointer;
+}
+
+.saleBtn:hover {
+    box-shadow: 0 2px 4px gray;
+}
+
+.banner img {
+    margin-bottom: 30px;
+}

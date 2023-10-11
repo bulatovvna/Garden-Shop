@@ -1,0 +1,27 @@
+.notFoundWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 300px;
+    gap: 80px;
+}
+
+.notFoundWrapper > p {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.notFoundWrapper > button {
+    background-color: #393;
+    padding: 20px 60px;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.notFoundWrapper > button:hover {
+    background-color: green;
+    box-shadow: 0 2px 4px gray;
+}

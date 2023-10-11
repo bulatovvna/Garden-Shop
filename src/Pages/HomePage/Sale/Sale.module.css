@@ -1,0 +1,51 @@
+.saleProducts {
+    padding: 50px 30px;
+    font-weight: 500;
+}
+
+.saleProducts>p {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.saleProductsList{
+    display: grid;
+    grid-template-columns: repeat(3, 318px);
+    gap: 35px;
+    padding-top: 21px;
+}
+
+.saleProductItem img {
+    width: 100%;
+    object-fit: cover;
+    height: 350px;
+}
+
+.prices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 24px;
+}
+
+.discont_price {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.price {
+    font-size: 20px;
+    color: #8b8b8b;
+    text-decoration: line-through;
+}
+
+.sale {
+    font-size: 20px;
+    color: #FF32A1;
+}
+
+.saleProductTitle {
+    padding: 0 24px;
+    color: #3a3a3a;
+}
