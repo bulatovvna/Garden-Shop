@@ -16,16 +16,18 @@ function Sale() {
     const filteredProducts = productsOnSale.products.filter(product => product.discont_price !== null)
 
   return (
-    <div className={s.saleProducts}>
+    <div className={s.saleProducts} id='saleProductsList'>
       <p>Sale</p>
       <div className={s.saleProductsList}>
         { 
             filteredProducts.map(product => {
                 return (
                         <div key={product.title} className={s.saleProductItem}>
-                            <Link to={`/products/${product.id}`} >
+                            <Link to={`/product/${product.id}`} >
                                 <img src={`http://localhost:3333${product.image}`} alt='product on sale'/>
                             </Link>
+
+                            <button className={s.btn_cart}>Add to cart</button>
                             
                             <div className={s.prices}>
                                 <p className={s.discont_price}>{product.discont_price}$</p>

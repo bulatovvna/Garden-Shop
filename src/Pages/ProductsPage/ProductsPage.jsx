@@ -24,12 +24,14 @@ function ProductsPage() {
       <div className={s.productsList}>
         {products?.data && products?.data.map(product => 
             <div className={s.productItem} key={product.id}>
-            <Link to={`/product/id`}>
+            <Link to={`/product/${product.id}`}>
               <img src={`http://localhost:3333${product.image}`} 
                     alt={product.title}
-                    style={{width: '100%', height: '350px', objectFit: 'cover'}}
+                    style={{width: '100%', height: '350px', objectFit: 'cover', position: 'relative'}}
                    />
             </Link>
+
+            <button className={s.btn_cart}>Add to cart</button>
 
               <div className={s.prices}>
                 {product.discont_price ? 

@@ -9,7 +9,9 @@ function Header() {
     <div className={s.header}>
       <div className={s.header_left}>
         <Logo/>
-        <button className={s.header_catalog_button}>Catalog</button>
+        <Link to={`/categories/all`}>
+          <button className={s.header_catalog_button}>Catalog</button>
+        </Link>
       </div>
 
       <div className={s.header_right}>
