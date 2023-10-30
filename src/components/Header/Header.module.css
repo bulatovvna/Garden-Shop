@@ -62,3 +62,9 @@
     border: none;
     cursor: pointer;
 }
+
+span {
+    text-decoration: none;
+    color: #000;
+    z-index: 1;
+}

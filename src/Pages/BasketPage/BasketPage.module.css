@@ -1,0 +1,144 @@
+.basket_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.empty {
+    padding: 80px 0;
+    font-weight: 700;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.basket_wrapper {
+    padding: 15px 30px;
+}
+
+.button_toBack {
+    width: 100%;
+    padding-right: 0;
+}
+
+.basketItem {
+    display: flex;
+    padding: 40px 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 18px;
+    color: #3a3a3a;
+}
+
+.basketItem > img {
+    max-width: 192px;
+    max-height: 166px;
+    border-radius: 10px;
+}
+
+.itemInfo {
+    max-width: 350px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.count_wrapper {
+    display: flex;
+    gap: 40px;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.priceInfo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 70px;
+}
+
+.discont_price {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.price {
+    font-size: 20px;
+    color: #8b8b8b;
+    text-decoration: line-through;
+}
+
+.remove_btn {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-items: flex-start;
+}
+
+.order_wrapper {
+    width: 496px;
+    height: 393px;
+    border: 2px solid #000;
+    border-radius: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.order_title {
+    font-weight: 600;
+    font-size: 28px;
+    padding: 0 25px;
+}
+
+
+.totalPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 45px 0 25px;
+}
+
+.total {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.order_price {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+form {
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+input {
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.order_btn {
+    border-radius: 20px;
+    background-color: #339933;
+    color: #fff;
+    font-weight: 700;
+    font-size: 28px;
+    padding: 20px;
+}

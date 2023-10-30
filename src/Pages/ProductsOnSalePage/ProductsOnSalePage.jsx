@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import s from '../ProductsPage/ProductsPage.module.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchProductsList } from '../../asyncActions/products'
+import Sort from '../../components/Sort/Sort'
 
 function ProductsOnSalePage() {
 
@@ -18,6 +19,7 @@ function ProductsOnSalePage() {
   return (
     <div>
       <h2>Products with sale</h2>
+      <Sort/>
       <div className={s.productsList}>
         { 
             filteredProducts.map(product => {

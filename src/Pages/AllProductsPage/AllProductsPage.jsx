@@ -4,6 +4,7 @@ import Sort from "../../components/Sort/Sort";
 import s from "../ProductsPage/ProductsPage.module.css"
 import { fetchProductsList } from "../../asyncActions/products";
 import { Link } from "react-router-dom";
+import { addToCart } from "../../store/BasketReducer";
 
 function AllProductsPage() {
 
@@ -29,7 +30,10 @@ function AllProductsPage() {
                     />
              </Link>
 
-             <button className={s.btn_cart}>Add to cart</button>
+             <button 
+              className={s.btn_cart}
+              onClick={() => dispatch(addToCart(product))}
+              > Add to cart</button>
  
                <div className={s.prices}>
                  {product.discont_price ? 

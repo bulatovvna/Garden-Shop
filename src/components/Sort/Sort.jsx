@@ -37,8 +37,9 @@ function Sort() {
         <fieldset className={s.sort_options}>
             <label>Sorted</label>
             <select>
+                <option value="defaultOption">by default</option>
                 {categories.categories.map(category => 
-                    <option key={category.title}>{category.title}</option>
+                    <option key={category.title} value={category.title}>{category.title}</option>
                 )}
             </select>
         </fieldset>
