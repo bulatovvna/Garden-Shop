@@ -28,9 +28,9 @@ button {
 
 .basketItem {
     display: flex;
+    justify-content: space-between;
     padding: 40px 0;
     border-top: 1px solid black;
-    border-bottom: 1px solid black;
 }
 
 .title {
@@ -141,4 +141,8 @@ input {
     font-weight: 700;
     font-size: 28px;
     padding: 20px;
+}
+
+.order_btn:hover {
+    box-shadow: 0 2px 4px gray;
 }

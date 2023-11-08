@@ -63,8 +63,16 @@
     cursor: pointer;
 }
 
+.header_cart_button {
+    box-shadow: none;
+}
+
 span {
     text-decoration: none;
     color: #000;
     z-index: 1;
+}
+
+.active {
+    color: green;
 }

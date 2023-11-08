@@ -4,6 +4,7 @@ import s from '../ProductsPage/ProductsPage.module.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchProductsList } from '../../asyncActions/products'
 import Sort from '../../components/Sort/Sort'
+import { addToCart } from '../../store/BasketReducer'
 
 function ProductsOnSalePage() {
 
@@ -32,7 +33,10 @@ function ProductsOnSalePage() {
                            />
                     </Link>
 
-                    <button className={s.btn_cart}>Add to cart</button>
+                    <button 
+                      className={s.btn_cart}
+                      onClick={() => dispatch(addToCart(product))}
+                    >Add to cart</button>
         
                       <div className={s.prices}>
                         {product.discont_price ? 

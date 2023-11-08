@@ -3,6 +3,7 @@ import s from "./ProductItemPage.module.css"
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchProductItem} from '../../asyncActions/products';
 import { useParams } from 'react-router-dom';
+import { addToCart } from '../../store/BasketReducer';
 
 function ProductItemPage() {
 
@@ -42,7 +43,10 @@ function ProductItemPage() {
                                 }
                             </div>
 
-                            <button className={s.btn_cart}>To cart</button>
+                            <button 
+                                className={s.btn_cart}
+                                onClick={() => dispatch(addToCart(elem))}
+                            >To cart</button>
                         </div>
                         <div className={s.desc}>
                             <p>Description</p>

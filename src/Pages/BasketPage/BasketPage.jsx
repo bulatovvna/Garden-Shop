@@ -15,10 +15,6 @@ function BasketPage() {
         localStorage.setItem('goods', JSON.stringify(basket))
     }, [basket])
 
-    let totalPrice = basket.reduce((total, item) => {
-        return (item.discont_price) ? total + item.discont_price * item.count : total + item.price * item.count
-    }, 0)
-
     const [inputValue, setInputValue] = useState('')
 
     const handleInputChange = (e) => {
@@ -46,6 +42,10 @@ function BasketPage() {
             alert('You have to enter your number')
         }
     }
+
+    let totalPrice = basket.reduce((total, item) => {
+        return (item.discont_price) ? total + item.discont_price * item.count : total + item.price * item.count
+    }, 0)
 
     return (
         <div>

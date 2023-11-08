@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Sort from "../../components/Sort/Sort";
 import s from "../ProductsPage/ProductsPage.module.css"

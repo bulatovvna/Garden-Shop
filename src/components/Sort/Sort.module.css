@@ -17,6 +17,9 @@ label {
 }
 
 .sort_price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     gap: 15px;
     padding-right: 40px;
 }

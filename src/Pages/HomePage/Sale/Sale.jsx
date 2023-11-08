@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import s from './Sale.module.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchProductsList } from '../../../asyncActions/products'
+import { addToCart } from '../../../store/BasketReducer'
 
 function Sale() {
 
@@ -27,7 +28,10 @@ function Sale() {
                                 <img src={`http://localhost:3333${product.image}`} alt='product on sale'/>
                             </Link>
 
-                            <button className={s.btn_cart}>Add to cart</button>
+                            <button 
+                              className={s.btn_cart}
+                              onClick={() => dispatch(addToCart(product))}
+                            >Add to cart</button>
                             
                             <div className={s.prices}>
                                 <p className={s.discont_price}>{product.discont_price}$</p>

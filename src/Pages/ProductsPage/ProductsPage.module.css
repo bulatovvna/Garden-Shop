@@ -31,7 +31,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(4, 318px);
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 32px;
     padding: 0 20px 50px 20px;
 }
