@@ -15,7 +15,7 @@ function Footer() {
                     <img src={insta} alt='instagram'/>
                     <p>instagram</p>
                 </a>
-                <a href='/'>
+                <a href='#'>
                     <img src={wtsApp} alt='whatsApp'/>
                     <p>WhatsApp</p>
                 </a>
