@@ -61,16 +61,12 @@
     color: none;
     border: none;
     cursor: pointer;
+    position: relative;
 }
 
-.header_cart_button {
-    box-shadow: none;
-}
-
-span {
-    text-decoration: none;
-    color: #000;
-    z-index: 1;
+.header_cart_button span {
+    position: absolute;
+    color: green;
 }
 
 .active {

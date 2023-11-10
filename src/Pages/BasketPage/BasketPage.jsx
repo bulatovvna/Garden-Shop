@@ -50,7 +50,7 @@ function BasketPage() {
     return (
         <div>
             <h2>Shopping cart</h2>
-            <button className={s.button_toBack} onClick={() => navigate(-1)}>Back to the store</button>
+            <button className={s.button_toBack} onClick={() => navigate(-1)}>Back to the store > </button>
 
             {(basket.length === 0) && <p className={s.empty}>Basket is empty</p>}
             <div className={s.basket_container}>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Sort from "../../components/Sort/Sort";
 import s from "../ProductsPage/ProductsPage.module.css"
@@ -9,7 +9,7 @@ import { addToCart } from "../../store/BasketReducer";
 function AllProductsPage() {
 
     const dispatch = useDispatch()
-    const products = useSelector(store => store.products.products)
+    const products = useSelector(store => store.products.products).filter(elem => elem.show && elem.show2)
     console.log(products);
 
     useEffect(() => {

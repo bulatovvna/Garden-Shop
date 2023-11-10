@@ -31,10 +31,12 @@ function Header() {
         </div>
 
           <Link to={'/basket'}>
-            <button className={s.header_cart_button}><Cart/></button>
-            <span>
-              {cart.reduce((sum, value) => sum + value.count, 0)}
-            </span>
+            <button className={s.header_cart_button}>
+              <Cart/>
+              <span>
+                {cart.reduce((sum, value) => sum + value.count, 0)}
+              </span>  
+            </button>
           </Link>
       </div>
     </div>

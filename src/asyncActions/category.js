@@ -1,5 +1,4 @@
 import { setCategoriesProducts } from "../store/CategoryReducer";
-import { setProducts } from "../store/ProductsReducer";
 
 export const fetchProductsListOfCategories = (id) => {
     return function (dispatch) {

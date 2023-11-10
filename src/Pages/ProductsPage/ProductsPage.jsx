@@ -11,6 +11,7 @@ function ProductsPage() {
   const dispatch = useDispatch()
   const { id } = useParams()
   const products = useSelector(store => store.category.category)
+  console.log(products);
 
   useEffect(() => {
     if (id) {
