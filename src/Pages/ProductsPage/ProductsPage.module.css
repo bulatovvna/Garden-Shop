@@ -81,3 +81,9 @@ h2 {
     padding: 0 24px;
     color: #3a3a3a;
 }
+
+@media(max-width: 390px) {
+    .productsList {
+        grid-template-columns: 318px;
+    }
+}

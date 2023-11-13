@@ -31,8 +31,8 @@ button {
 }
 
 .basketItem {
+    position: relative;
     display: flex;
-    justify-content: space-between;
     padding: 40px 0;
     border-top: 1px solid black;
 }
@@ -87,8 +87,8 @@ button {
 .remove_btn {
     width: 30px;
     height: 30px;
-    display: flex;
-    justify-items: flex-start;
+    position: absolute;
+    right: 0;
 }
 
 .order_wrapper {
@@ -149,4 +149,33 @@ input {
 
 .order_btn:hover {
     box-shadow: 0 2px 4px gray;
+}
+
+@media(max-width: 390px) {
+    .basket_container {
+        flex-direction: column;
+    }
+
+    .basketItem {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .itemInfo {
+        gap: 20px;
+        padding: 0;
+    }
+
+    .remove_btn {
+        position: absolute;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .order_wrapper {
+        width: 380px;
+    }
 }

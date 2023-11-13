@@ -17,10 +17,12 @@ function ProductsOnSalePage() {
 
     const filteredProducts = productsOnSale.products.filter(product => product.discont_price !== null)
 
+    const showCheckbox = false
+
   return (
     <div>
       <h2>Products with sale</h2>
-      <Sort/>
+      <Sort showCheckbox={showCheckbox}/>
       <div className={s.productsList}>
         { 
             filteredProducts.map(product => {

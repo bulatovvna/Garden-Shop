@@ -10,16 +10,18 @@ function AllProductsPage() {
 
     const dispatch = useDispatch()
     const products = useSelector(store => store.products.products).filter(elem => elem.show && elem.show2)
-    console.log(products);
+    // console.log(products);
 
     useEffect(() => {
         dispatch(fetchProductsList())
     },[])
+
+    const showCheckbox = true
   
     return (
       <div>
         <h2>All products</h2>
-        <Sort/>
+        <Sort showCheckbox={showCheckbox}/>
         <div className={s.productsList}>
           {products.map(product => 
              <div className={s.productItem} key={product.id}>

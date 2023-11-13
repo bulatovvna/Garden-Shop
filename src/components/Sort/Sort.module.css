@@ -57,6 +57,14 @@ label {
     outline: none;
 }
 
-option {
-    font-size: 20px;
+@media(max-width: 390px) {
+    .sort_wrapper {
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 0;
+    }
+
+    .sort_options {
+        padding-right: 25px;
+    }
 }

@@ -35,13 +35,20 @@ export const ProductsReducer = (state = defaultState, action) => {
                 })}
             }
         case SORT_PRODUCTS:
-            if(action.payload === 1) {
-                return {...state, products: state.products.slice().sort((a,b) => a.price - b.price)}
+            if(action.payload == 1) {
+                return  {...state, products: state.products.slice().sort((a,b) => a.price - b.price)}
             }
-            if(action.payload === 2) {
+            if(action.payload == 2) {
                 return {...state, products: state.products.slice().sort((a,b) => b.price - a.price)}
             }
-            else return state
+            if(action.payload == 3) {
+                return {...state, products: state.products.slice().sort((a,b) => {
+                    if(a.title > b.title) return 1
+                    if(a.title < b.title) return -1
+                    if(a.title === b.title) return 0
+                })}
+            }
+            return state
         default: return state
     }
 }

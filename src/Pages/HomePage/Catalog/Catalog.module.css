@@ -53,3 +53,9 @@
     font-weight: 600;
     font-size: 18px;
 }
+
+@media(max-width: 390px) {
+    .categoryList {
+        grid-template-columns: 318px;
+    }
+}

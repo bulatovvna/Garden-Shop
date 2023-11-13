@@ -3,7 +3,7 @@ import s from "./Sort.module.css"
 import { useDispatch } from 'react-redux'
 import { filterProductsPrice, filterProductsSale, sortProducts } from '../../store/ProductsReducer'
 
-function Sort() {
+function Sort({showCheckbox}) {
 
   const dispatch = useDispatch()
   const formRef = useRef()
@@ -32,21 +32,24 @@ function Sort() {
         />
       </form>
 
-      <fieldset className={s.sort_discPrice}>
-        <label>Discount price</label>
-        <input
-            onChange={(e) => dispatch(filterProductsSale(e.target.checked))}
-            type='checkbox'
-            show='true'
-        />
-      </fieldset>
+      {showCheckbox && (
+        <fieldset className={s.sort_discPrice}>
+          <label>Discount price</label>
+          <input
+              onChange={(e) => dispatch(filterProductsSale(e.target.checked))}
+              type='checkbox'
+              show='true'
+          />
+        </fieldset>
+      )}
 
         <fieldset className={s.sort_options}>
             <label>Sorted</label>
             <select onChange={(e) => dispatch(sortProducts(e.target.value))}>
                 <option value={0}>by default</option>
-                <option value={1}>By descending</option>
+                <option value='1'>By descending</option>
                 <option value={2}>By ascending</option>
+                <option value={3}>Alphabetically</option>
             </select>
         </fieldset>
 

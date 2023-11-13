@@ -23,6 +23,7 @@ function FirstSaleOff() {
             .then(data => {
                 console.log(data)
                 setInputValue('')
+                alert('We send to your number a 5% coupon')
             })
         } else {
             alert('You have to enter your number')
@@ -32,7 +33,7 @@ function FirstSaleOff() {
   return (
     <div className={s.firstSaleOff}>
       <img src={gnome} alt='gnome'/>
-      <div>
+      <div className={s.sale_info}>
         <p>5% off</p>
         <p className={s.secondP}>on the first order</p>
         <div className={s.inputInfo}>

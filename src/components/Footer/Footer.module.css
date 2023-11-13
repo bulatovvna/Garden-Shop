@@ -54,3 +54,18 @@
     font-weight: 600;
     font-size: 24px;
 }
+
+@media(max-width: 390px) {
+    .contactUs {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .contactInfo >.number {
+        font-size: 36px;
+    }
+
+    .adressInfo>a {
+        font-size: 28px;
+    }
+}

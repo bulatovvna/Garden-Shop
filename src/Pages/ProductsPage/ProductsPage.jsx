@@ -10,7 +10,7 @@ function ProductsPage() {
 
   const dispatch = useDispatch()
   const { id } = useParams()
-  const products = useSelector(store => store.category.category)
+  const products = useSelector(store => store.category?.category?.data)
   console.log(products);
 
   useEffect(() => {
@@ -19,12 +19,14 @@ function ProductsPage() {
     }
   },[id])
 
+  const showCheckbox = true
+
   return (
     <div>
       <h2>{products?.category?.title}</h2>
-      <Sort/>
+      <Sort showCheckbox={showCheckbox}/>
       <div className={s.productsList}>
-        {products?.data && products?.data.map(product => 
+        {products && products.map(product => 
             <div className={s.productItem} key={product.id}>
             <Link to={`/product/${product.id}`}>
               <img src={`http://localhost:3333${product.image}`} 

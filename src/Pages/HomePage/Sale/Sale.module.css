@@ -77,3 +77,9 @@
     padding: 0 24px;
     color: #3a3a3a;
 }
+
+@media(max-width: 390px) {
+    .saleProductsList {
+        grid-template-columns: 318px;
+    }
+}

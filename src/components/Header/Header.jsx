@@ -1,8 +1,10 @@
 import s from "./Header.module.css"
 import {ReactComponent as Logo} from "./logo.svg"
 import {ReactComponent as Cart} from './cart.svg'
+import {ReactComponent as BurgerMenu} from './burger_menu.svg'
 import { Link, useLocation } from "react-router-dom"
 import { useSelector } from "react-redux"
+import { useState } from "react"
 
 function Header() {
 
@@ -14,6 +16,8 @@ function Header() {
     return location.pathname === path ? `${s.active}` : ''
   }
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
   return (
     <div className={s.header}>
       <div className={s.header_left}>
@@ -24,10 +28,31 @@ function Header() {
       </div>
 
       <div className={s.header_right}>
-        <div className={s.header_menu}>
-          <Link to={'/'} className={`${s.header_menu_item} ${isActive('/')}`}><p>Main Page</p></Link>
-          <Link to={'/products/all'} className={`${s.header_menu_item} ${isActive('/products/all')}`}><p>All products</p></Link>
-          <Link to={'/products/sale'} className={`${s.header_menu_item} ${isActive('/products/sale')}`}><p>All sales</p></Link>
+        <button className={s.burger_btn} onClick={() => setIsMenuOpen(!isMenuOpen)}><BurgerMenu/></button>
+        <div className={`${s.header_menu} ${isMenuOpen ? s.open : ''}`}>
+          <Link to={'/'} 
+            className={`${s.header_menu_item} 
+            ${isActive('/')}`}
+            onClick={() => setIsMenuOpen(false)}
+            >
+              <p>Main Page</p>
+          </Link>
+
+          <Link to={'/products/all'} 
+            className={`${s.header_menu_item} 
+            ${isActive('/products/all')}`}
+            onClick={() => setIsMenuOpen(false)}
+            >
+              <p>All products</p>
+          </Link>
+
+          <Link to={'/products/sale'} 
+            className={`${s.header_menu_item} 
+            ${isActive('/products/sale')}`}
+            onClick={() => setIsMenuOpen(false)}
+            >
+              <p>All sales</p>
+          </Link>
         </div>
 
           <Link to={'/basket'}>

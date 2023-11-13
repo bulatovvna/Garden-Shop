@@ -50,3 +50,13 @@
 .banner img {
     margin-bottom: 30px;
 }
+
+@media(max-width: 390px) {
+    .banner img {
+        position: absolute;
+        max-width: 100%;
+    }
+    .saleBanner {
+        z-index: 1;
+    }
+}

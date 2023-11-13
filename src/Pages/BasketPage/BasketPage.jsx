@@ -34,9 +34,10 @@ function BasketPage() {
                 .then(res => res.json())
                 .then(data => {
                     console.log(data)
-                    setInputValue('')
                     dispatch(resetBasket())
                     dispatch(setTotalPrice(0))
+                    setInputValue('')
+                    alert('Your order is accepted')
                 })
         } else {
             alert('You have to enter your number')

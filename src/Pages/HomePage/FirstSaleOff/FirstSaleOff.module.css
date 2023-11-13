@@ -53,3 +53,14 @@
 .firstSaleOff button:hover {
     box-shadow: 0 3px 5px #006300;
 }
+
+@media(max-width: 390px) {
+    .firstSaleOff img {
+        position: absolute;
+    }
+
+    .sale_info {
+        padding: 10px;
+        z-index: 1;
+    }
+}
